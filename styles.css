@@ -329,7 +329,7 @@ html, body {
 
 .day-cell.event {
     background: var(--accent-peach);
-    color: white;
+    color: var(--text-dark);
     border: 2px dashed var(--primary-pink);
     font-weight: 700;
 }
@@ -689,4 +689,14 @@ html, body {
     .quote-text {
         font-size: 0.9rem;
     }
+}
+
+.nav-button:disabled,
+.nav-button:disabled:hover {
+    opacity: 0.4;
+    cursor: default;
+    transform: none;
+    background: linear-gradient(135deg, var(--lightest-pink), var(--lighter-pink));
+    border-color: var(--border-light);
+    color: var(--primary-pink);
 }
